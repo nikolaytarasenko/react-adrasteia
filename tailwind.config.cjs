@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-exports.default = {
+module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -16,6 +16,14 @@ exports.default = {
           90: '#989EB1'
         }
       }
+    },
+    screens: {
+      xs: "480px",
+      sm: "576px",
+      md: "768px",
+      lg: "992px",
+      xl: "1200px",
+      xxl: "1400px"
     },
   },
   plugins: [],

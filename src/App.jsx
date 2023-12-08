@@ -1,6 +1,10 @@
+import Navbar from './scenes/Navbar'
+
 function App() {
     return (
-        <h1>App</h1>
+        <div className="app">
+            <Navbar />
+        </div>
     )
 }
 
