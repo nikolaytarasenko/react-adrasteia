@@ -29,6 +29,11 @@ html, body, #root, .app {
 }
 
 @layer utilities {
+    .regular-30 {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
     .semibold-18 {
         font-size: 18px;
         font-weight: 600;
