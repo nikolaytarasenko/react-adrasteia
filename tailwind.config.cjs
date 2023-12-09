@@ -15,6 +15,12 @@ module.exports = {
           50: '#F3F6F9',
           90: '#989EB1'
         }
+      },
+      content: {
+        hero: "url('./assets/hero-bg-pattern.png')",
+      },
+      backgroundImage: {
+        "bg-hero-mobile": "url('./assets/hero-bg-pattern.png')",
       }
     },
     screens: {

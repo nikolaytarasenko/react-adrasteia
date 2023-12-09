@@ -45,4 +45,16 @@ html, body, #root, .app {
         font-weight: 600;
         letter-spacing: -0.6px;
     }
+
+    .section-title {
+        font-size: 94px;
+        font-weight: 400;
+        @apply text-blue-90;
+    }
+
+    .section-description {
+        font-size: 34px;
+        font-weight: 400;
+        @apply text-gray-90;
+    }
 }
