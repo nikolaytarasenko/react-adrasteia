@@ -8,7 +8,7 @@ const About = () => {
     return (
         <div id="about" className="py-[60px]">
             <div className="flex flex-col items-center gap-4 mb-[70px] lg:mb-[120px]">
-                <h1 className="text-[40px] text-blue-90 lg:section-title">Хто ми?</h1>
+                <h2 className="text-[40px] text-blue-90 lg:section-title">Хто ми?</h2>
                 <p className="text-2xl lg:section-description text-center max-w-[520px]">Про нас не пишуть рейтингові агенції та пошукові системи</p>
             </div>
             <div className="flex flex-col text-center lg:text-left lg:flex-row justify-between items-center gap-[80px] lg:gap-[50px] relative">

@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-margin-top: 200px;
+}
+
 body {
     font-family: Inter, sans-serif;
     font-weight: 400;
@@ -26,6 +30,28 @@ html, body, #root, .app {
 
 .custom-bg-gray {
     @apply bg-gray-50
+}
+
+.custom-bg-blue {
+    @apply bg-blue-90 text-white
+}
+
+/* slider arrows */
+@media (min-width: 768px) {
+    .splide__arrow--prev {
+        left: unset;
+        right: 4rem;
+    }
+
+    .splide__arrow--prev,
+    .splide__arrow--next {
+        top: -100px;
+    }
+
+    .splide__arrow svg {
+        height: 2.2em;
+        width: 2.2em;
+    }
 }
 
 @layer utilities {
