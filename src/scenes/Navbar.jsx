@@ -18,19 +18,19 @@ const Navbar = () => {
                 </div>
                 <ul className="hidden xl:flex xl:items-center xl:justify-center gap-[18px] xxl:gap-[32px] basis-3/4 xl:basis-2/4">
                     <li>
-                        <AnchorLink className="semibold-18 xl:semibold-20 hover:opacity-60 hover:text-black duration-200" href="#about">Про нас</AnchorLink>
+                        <AnchorLink offset="100" className="semibold-18 xl:semibold-20 hover:opacity-60 hover:text-black duration-200" href="#about">Про нас</AnchorLink>
                     </li>
                     <li>
-                        <AnchorLink className="semibold-18 xl:semibold-20 hover:opacity-60 hover:text-black duration-200" href="#services">Послуги</AnchorLink>
+                        <AnchorLink offset="100" className="semibold-18 xl:semibold-20 hover:opacity-60 hover:text-black duration-200" href="#services">Послуги</AnchorLink>
                     </li>
                     <li>
-                        <AnchorLink className="semibold-18 xl:semibold-20 hover:opacity-60 hover:text-black duration-200" href="#work">Як ми працюємо</AnchorLink>
+                        <AnchorLink offset="100" className="semibold-18 xl:semibold-20 hover:opacity-60 hover:text-black duration-200" href="#work">Як ми працюємо</AnchorLink>
                     </li>
                     <li>
-                        <AnchorLink className="semibold-18 xl:semibold-20 hover:opacity-60 hover:text-black duration-200" href="#clients">Клієнти</AnchorLink>
+                        <AnchorLink offset="100" className="semibold-18 xl:semibold-20 hover:opacity-60 hover:text-black duration-200" href="#clients">Клієнти</AnchorLink>
                     </li>
                     <li>
-                        <AnchorLink className="semibold-18 xl:semibold-20 hover:opacity-60 hover:text-black duration-200" href="#contacts">Контакти</AnchorLink>
+                        <AnchorLink offset="100" className="semibold-18 xl:semibold-20 hover:opacity-60 hover:text-black duration-200" href="#contacts">Контакти</AnchorLink>
                     </li>
                 </ul>
                 <div className="hidden basis-1/4 xl:flex xl:justify-end">
@@ -51,19 +51,19 @@ const Navbar = () => {
             {isMenuOpened && (
                 <ul className="fixed top-[68px] bottom-0 left-0 w-full h-full flex flex-col justify-center items-center gap-[20px] bg-white text-blue-90 xl:hidden">
                     <li>
-                        <AnchorLink className="regular-30 hover:opacity-60 hover:text-black duration-200" href="#about">Про нас</AnchorLink>
+                        <AnchorLink offset="100" className="regular-30 hover:opacity-60 hover:text-black duration-200" href="#about">Про нас</AnchorLink>
                     </li>
                     <li>
-                        <AnchorLink className="regular-30 hover:opacity-60 hover:text-black duration-200" href="#services">Послуги</AnchorLink>
+                        <AnchorLink offset="100" className="regular-30 hover:opacity-60 hover:text-black duration-200" href="#services">Послуги</AnchorLink>
                     </li>
                     <li>
-                        <AnchorLink className="regular-30 hover:opacity-60 hover:text-black duration-200" href="#work">Як ми працюємо</AnchorLink>
+                        <AnchorLink offset="100" className="regular-30 hover:opacity-60 hover:text-black duration-200" href="#work">Як ми працюємо</AnchorLink>
                     </li>
                     <li>
-                        <AnchorLink className="regular-30 hover:opacity-60 hover:text-black duration-200" href="#clients">Клієнти</AnchorLink>
+                        <AnchorLink offset="100" className="regular-30 hover:opacity-60 hover:text-black duration-200" href="#clients">Клієнти</AnchorLink>
                     </li>
                     <li>
-                        <AnchorLink className="regular-30 hover:opacity-60 hover:text-black duration-200" href="#contacts">Контакти</AnchorLink>
+                        <AnchorLink offset="100" className="regular-30 hover:opacity-60 hover:text-black duration-200" href="#contacts">Контакти</AnchorLink>
                     </li>
                 </ul>
             )}

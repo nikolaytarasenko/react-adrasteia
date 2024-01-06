@@ -10,10 +10,6 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-margin-top: 200px;
-}
-
 body {
     font-family: Inter, sans-serif;
     font-weight: 400;
