@@ -21,6 +21,7 @@ module.exports = {
       },
       backgroundImage: {
         "bg-hero-mobile": "url('./assets/hero-bg-pattern.png')",
+        "bg-clients": "url(./assets/clients-bg.png)"
       }
     },
     screens: {

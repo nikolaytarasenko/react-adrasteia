@@ -6,6 +6,10 @@ import serviceIcon5 from '../assets/services-icon-5.png'
 import serviceIcon6 from '../assets/services-icon-6.png'
 import { FaArrowRight, FaCheck } from 'react-icons/fa6'
 import { LuClipboardCheck } from 'react-icons/lu'
+import { PiMegaphoneBold } from 'react-icons/pi'
+import { BiBriefcase } from 'react-icons/bi'
+import { FaRegStar } from 'react-icons/fa'
+import { FiUser } from 'react-icons/fi'
 
 export const services = [
     {
@@ -56,4 +60,23 @@ export const work = [
         icon: FaCheck,
         title: 'Надаємо результат'
     },
+]
+
+export const clients = [
+    {
+        icon: PiMegaphoneBold,
+        title: 'Політики'
+    },
+    {
+        icon: BiBriefcase,
+        title: 'Бізнес'
+    },
+    {
+        icon: FaRegStar,
+        title: 'Селебріті'
+    },
+    {
+        icon: FiUser,
+        title: 'Приватні особи'
+    }
 ]
