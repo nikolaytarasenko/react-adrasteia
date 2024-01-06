@@ -2,6 +2,7 @@ import Navbar from './scenes/Navbar'
 import Hero from './scenes/Hero'
 import About from './scenes/About'
 import Services from './scenes/Services'
+import Work from './scenes/Work'
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
                 <Hero />
                 <About />
                 <Services />
+                <Work />
             </div>
         </div>
     )

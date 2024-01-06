@@ -4,6 +4,8 @@ import serviceIcon3 from '../assets/services-icon-3.png'
 import serviceIcon4 from '../assets/services-icon-4.png'
 import serviceIcon5 from '../assets/services-icon-5.png'
 import serviceIcon6 from '../assets/services-icon-6.png'
+import { FaArrowRight, FaCheck } from 'react-icons/fa6'
+import { LuClipboardCheck } from 'react-icons/lu'
 
 export const services = [
     {
@@ -35,5 +37,23 @@ export const services = [
         image: serviceIcon6,
         title: 'Захист',
         list: ['Захист при шантажі та погрозах', 'Безпека сім\'ї та дітей', 'Допомога у підготовці та супровід у поїздках']
+    },
+]
+
+export const work = [
+    {
+        id: '01',
+        icon: FaArrowRight,
+        title: 'Розбираємось у ситуації'
+    },
+    {
+        id: '02',
+        icon: LuClipboardCheck,
+        title: 'Складаємо план дій'
+    },
+    {
+        id: '03',
+        icon: FaCheck,
+        title: 'Надаємо результат'
     },
 ]
