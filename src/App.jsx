@@ -5,6 +5,7 @@ import Services from './scenes/Services'
 import Work from './scenes/Work'
 import Clients from './scenes/Clients'
 import Contacts from './scenes/Contacts'
+import Footer from './scenes/Footer'
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
             </div>
             <Clients />
             <Contacts />
+            <Footer />
         </div>
     )
 }
