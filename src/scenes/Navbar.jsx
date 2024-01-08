@@ -55,20 +55,20 @@ const Navbar = () => {
             {/* Mobile menu */}
             {isMenuOpen && (
                 <ul className="fixed top-[68px] bottom-0 left-0 w-full h-full flex flex-col justify-center items-center gap-[20px] bg-white text-blue-90 xl:hidden">
-                    <li>
-                        <AnchorLink offset="100" className="regular-30 hover:opacity-60 hover:text-black duration-200" href="#about">Про нас</AnchorLink>
+                    <li onClick={() => setIsMenuOpen(false)}>
+                        <AnchorLink offset="65" className="regular-30 hover:opacity-60 hover:text-black duration-200" href="#about">Про нас</AnchorLink>
                     </li>
-                    <li>
-                        <AnchorLink offset="100" className="regular-30 hover:opacity-60 hover:text-black duration-200" href="#services">Послуги</AnchorLink>
+                    <li onClick={() => setIsMenuOpen(false)}>
+                        <AnchorLink offset="80" className="regular-30 hover:opacity-60 hover:text-black duration-200" href="#services">Послуги</AnchorLink>
                     </li>
-                    <li>
-                        <AnchorLink offset="100" className="regular-30 hover:opacity-60 hover:text-black duration-200" href="#work">Як ми працюємо</AnchorLink>
+                    <li onClick={() => setIsMenuOpen(false)}>
+                        <AnchorLink offset="65" className="regular-30 hover:opacity-60 hover:text-black duration-200" href="#work">Як ми працюємо</AnchorLink>
                     </li>
-                    <li>
-                        <AnchorLink offset="100" className="regular-30 hover:opacity-60 hover:text-black duration-200" href="#clients">Клієнти</AnchorLink>
+                    <li onClick={() => setIsMenuOpen(false)}>
+                        <AnchorLink offset="65" className="regular-30 hover:opacity-60 hover:text-black duration-200" href="#clients">Клієнти</AnchorLink>
                     </li>
-                    <li>
-                        <AnchorLink offset="100" className="regular-30 hover:opacity-60 hover:text-black duration-200" href="#contacts">Контакти</AnchorLink>
+                    <li onClick={() => setIsMenuOpen(false)}>
+                        <AnchorLink offset="65" className="regular-30 hover:opacity-60 hover:text-black duration-200" href="#contacts">Контакти</AnchorLink>
                     </li>
                 </ul>
             )}

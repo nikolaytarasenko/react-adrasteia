@@ -1,13 +1,5 @@
 import { useState, useEffect, createContext } from 'react'
-
-import Navbar from './scenes/Navbar'
-import Hero from './scenes/Hero'
-import About from './scenes/About'
-import Services from './scenes/Services'
-import Work from './scenes/Work'
-import Clients from './scenes/Clients'
-import Contacts from './scenes/Contacts'
-import Footer from './scenes/Footer'
+import { Navbar, Hero, About, Services, Work, Clients, Contacts, Footer } from './scenes'
 import Modal from './components/Modal'
 
 export const ModalContext = createContext([])

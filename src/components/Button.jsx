@@ -4,9 +4,9 @@ const Button = ({ title, backgroundColor = 'transparent', type = 'button', click
     const bgColor = `custom-bg-${backgroundColor}`
 
     const handleClick = e => {
-        type === 'submit' ?
-            e.preventDefault() :
+        if (type === 'button') {
             clickHandler(true)
+        }
     }
 
     return (
