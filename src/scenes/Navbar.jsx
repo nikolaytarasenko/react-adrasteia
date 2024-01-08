@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import { ModalContext } from '../App'
 import Button from '../components/Button'
 import logo from '../assets/logo.svg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
@@ -6,7 +7,8 @@ import { HiOutlineMenuAlt4 } from 'react-icons/hi'
 import { IoCloseOutline } from 'react-icons/io5'
 
 const Navbar = () => {
-    const [isMenuOpened, setIsMenuOpened] = useState(false)
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [isModalOpen, setIsModalOpen] = useContext(ModalContext)
 
     return (
         <nav className="fixed top-0 left-0 w-full z-40 border-b-blue-90 border-b border-opacity-20 bg-white">
@@ -34,21 +36,24 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <div className="hidden basis-1/4 xl:flex xl:justify-end">
-                    <Button
-                        title="Оформити заявку"
-                        backgroundColor="transparent"
-                    />
+                    <div>
+                        <Button
+                            title="Оформити заявку"
+                            backgroundColor="transparent"
+                            clickHandler={setIsModalOpen}
+                        />
+                    </div>
                 </div>
                 <button
                     className="flex flex-col gap-[6px] relative xl:hidden"
-                    onClick={() => setIsMenuOpened(prev => !prev)}
+                    onClick={() => setIsMenuOpen(prev => !prev)}
                 >
-                    {isMenuOpened ? <IoCloseOutline size={30} /> : <HiOutlineMenuAlt4 size={30} />}
+                    {isMenuOpen ? <IoCloseOutline size={30} /> : <HiOutlineMenuAlt4 size={30} />}
                 </button>
             </div>
 
             {/* Mobile menu */}
-            {isMenuOpened && (
+            {isMenuOpen && (
                 <ul className="fixed top-[68px] bottom-0 left-0 w-full h-full flex flex-col justify-center items-center gap-[20px] bg-white text-blue-90 xl:hidden">
                     <li>
                         <AnchorLink offset="100" className="regular-30 hover:opacity-60 hover:text-black duration-200" href="#about">Про нас</AnchorLink>

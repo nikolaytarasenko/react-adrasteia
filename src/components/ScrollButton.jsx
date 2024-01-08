@@ -8,18 +8,30 @@ const ScrollButton = ({ direction }) => {
     const icon = direction === 'down' ? `${arrowDown}` : `${arrowUp}`
 
     return (
-        <AnchorLink
-            offset="100"
-            href="#about"
-            className="w-[54px] h-[54px] rounded-full bg-gray-50 flex justify-center items-center cursor-pointer transition duration-200 hover:bg-gray-90"
-        >
-            <img src={icon} alt="scroll" />
-        </AnchorLink>
-    );
-};
+        <>
+            {direction === 'down' ? (
+                <AnchorLink
+                    offset="100"
+                    href="#about"
+                    className="w-[54px] h-[54px] rounded-full bg-gray-50 flex justify-center items-center cursor-pointer transition duration-200 hover:bg-gray-90"
+                >
+                    <img src={icon} alt="scroll" />
+                </AnchorLink>
+            ) : (
+                <AnchorLink
+                    offset="100"
+                    href="#hero"
+                    className="w-[54px] h-[54px] rounded-full bg-gray-50 flex justify-center items-center cursor-pointer transition duration-200 hover:bg-gray-90"
+                >
+                    <img src={icon} alt="scroll" />
+                </AnchorLink>
+            )}
+        </>
+    )
+}
 
 ScrollButton.propTypes = {
     direction: PropTypes.string
 }
 
-export default ScrollButton;
+export default ScrollButton

@@ -20,6 +20,10 @@ html, body, #root, .app {
     @apply text-gray-90;
 }
 
+.overflow-hidden {
+    overflow: hidden;
+}
+
 .custom-bg-transparent {
     background-color: transparent;
 }

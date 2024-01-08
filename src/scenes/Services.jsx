@@ -1,3 +1,5 @@
+import { useContext } from 'react'
+import { ModalContext } from '../App'
 import { services } from '../utils/constants'
 import Button from '../components/Button'
 import ServiceCard from '../components/ServiceCard'
@@ -5,6 +7,8 @@ import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
 
 const Services = () => {
+    const [isModalOpen, setIsModalOpen] = useContext(ModalContext)
+
     return (
         <div id="services" className="py-[60px] bg-gray-50 rounded-[50px] mt-16">
             <div className="flex">
@@ -51,6 +55,7 @@ const Services = () => {
                 <Button
                     title="Оформити заявку"
                     backgroundColor="blue"
+                    clickHandler={setIsModalOpen}
                 />
             </div>
         </div>
